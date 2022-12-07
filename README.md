@@ -33,10 +33,9 @@ tensorflow 1.2.3
 python label_image.py
 ```
 
-* results
+## results
 
 
 <img src="demo.png" height="400" width="300" > <img src="demo_1.png" height="400" width="500" >
-![alt text](demo_1.png)
-![alt text](demo_3.png)
+<img src="demo_2.png" height="400" width="300" > <img src="demo_3.png" height="400" width="500" >
 
