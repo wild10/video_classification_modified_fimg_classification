@@ -1,7 +1,7 @@
 # VIDEO CLASSIFICATION
 
 This is a repo that contains a peace of code modified in purpose to do video classification using the previous
-image classifaction code contained in TensorFlow examples.
+image classification code contained in TensorFlow examples.
 
 the files that it contains are :
 - label_image.py (modified from the original) see original [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/label_image/label_image.py)
@@ -12,9 +12,9 @@ the files that it contains are :
 
 ## if you want to see experiments view you can access the youtube demo
 
-[demo](https://www.youtube.com/watch?v=mZdsx-WhCwo&ab_channel=ErrolWilderdMamaniCondori)
+click [youtube video demo](https://www.youtube.com/watch?v=mZdsx-WhCwo&ab_channel=ErrolWilderdMamaniCondori)
 
-## instalation dependencies
+## installation dependencies
 * tensorflow clone [this] (https://github.com/tensorflow/tensorflow)
 * and mainly python 3.7
 * virtual env with anaconda
@@ -36,3 +36,4 @@ python label_image.py
 * results
 
 ![alt text](demo.png)
+
