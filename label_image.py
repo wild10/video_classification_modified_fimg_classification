@@ -94,7 +94,7 @@ if __name__ == "__main__":
   output_layer = "InceptionV3/Predictions/Reshape_1"
 
   # hyperparameters for video
-  video_path = doc_dir + "tensorflow/tensorflow/examples/label_image/data/neymar.mp4"
+  video_path = doc_dir + "tensorflow/tensorflow/examples/label_image/data/elephant.mp4"
   writer = None
   screens_folder_path = "/home/predator/Documents/graymatics_test/tensorflow/tensorflow/examples/label_image/data/screens/"
 
@@ -159,7 +159,7 @@ if __name__ == "__main__":
   # for i in top_k:
   #   print(labels[i], results[i])
 
-  # CLASSIFICATION FOR VIDEOS 
+  # CLASSIFICATION FOR VIDEOS
 
   with tf.compat.v1.Session( graph = graph ) as sess:
       # video capture
@@ -204,7 +204,7 @@ if __name__ == "__main__":
 
           # show prediction squeeze the dimmetion
           results = np.squeeze(results)
-          top_k = results.argsort()[-2:][::-1]
+          top_k = results.argsort()[-1:][::-1]
 
           # top_k = results[0].argsort()[-len(results[0]):][::-1]
 
@@ -216,11 +216,11 @@ if __name__ == "__main__":
               label_text = labels[k]
               score = results[k]
               if( score >  0.8):
-                  cv2.putText(frame, '%s  = %.5f' % (label_text, score),
-                             (20, 20 * pos), cv2.FONT_HERSHEY_DUPLEX, 0.8, (0, 255, 0))
+                  cv2.putText(frame, '%.2f%% %s ' % (score, label_text),
+                             (100, 30 * pos), cv2.FONT_HERSHEY_DUPLEX, 0.8, (0, 255, 0))
               else:
-                  cv2.putText(frame, '%s  = %.5f' % (label_text, score),
-                         (20, 20 * pos), cv2.FONT_HERSHEY_DUPLEX, 0.8, (0, 0, 255))
+                  cv2.putText(frame, '%.2f%% %s ' % (score, label_text),
+                         (100, 30 * pos), cv2.FONT_HERSHEY_DUPLEX, 0.8, (0, 0, 255))
               pos = pos + 1
 
           if writer is None:
