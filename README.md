@@ -35,5 +35,8 @@ python label_image.py
 
 * results
 
-![alt text](demo.png)
+
+<img src="demo.png" height="60" width="60" >
+![alt text](demo_1.png)
+![alt text](demo_3.png)
 
